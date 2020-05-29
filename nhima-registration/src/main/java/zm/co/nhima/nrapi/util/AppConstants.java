@@ -11,6 +11,12 @@ public class AppConstants {
 	public static final String TOKEN_EXPIRED = "Token has expired please reset password again";
 	public static final String EMAIL_SENT_MSG = "Please check your email a password Reset Link has been sent to your email.";
 	
+	public static final String NO_FILE_ATTACHED_ERROR ="No File Attached";
+	public static final String FILE_UPLOAD_ERROR="File Upload Error";
+	public static final String SUBMIT_ERROR ="Submit Error";
+	public static final String AGE_ERROR="Age Error";
+	public static final String DELETE_ERROR = "Delete Error";
+	
 	public static final String FILE_SEPERATOR = "_";
 	public static final String DEFAULT_CONTENT_TYPE = "application/octet-stream";
 	public static final String FILE_DOWNLOAD_HTTP_HEADER = "inline; filename=\"%s\"";

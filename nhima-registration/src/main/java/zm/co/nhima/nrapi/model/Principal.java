@@ -24,6 +24,7 @@ public class Principal {
 	@Column(name="principal_id")
 	private Long id;
 	private String payerRef;
+	@Column(unique=true)
 	private String nhimaNumber;
 	private String firstName;
 	private String lastName;
@@ -34,7 +35,9 @@ public class Principal {
 	private Date dob;
 	private String employmentType;
 	private double salary;
+	@Column(unique=true)
 	private String email;
+	@Column(unique=true)
 	private String phone;
 	private String residentialAddress;
 	private String province;
@@ -45,9 +48,13 @@ public class Principal {
 	private String dependentRef;
 	private String companyId;
 	private String companyName;
-	private String passportSizePhoto;  //Passport Size Photo.
+	@Column(unique=true)
+	private String passportSizePhoto;
+	private Date passportSizePhotoUploadDate;
 	private String status;
 	private String createdBy;
 	private Date createdDate;
+	private String lastModifiedBy;
 	private Date modifiedDate;
+	
 }

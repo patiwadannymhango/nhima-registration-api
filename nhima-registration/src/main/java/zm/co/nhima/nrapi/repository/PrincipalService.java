@@ -45,11 +45,12 @@ public class PrincipalService {
 		return principalRepo.findByCreatedByAndStatus(username, status);
 	}
 	
-	public void delete(Long id) {
-		Principal principal = getOne(id);
+	public void delete(String nhimaNumber) {
+		Principal principal = getByNhimaNumber(nhimaNumber);
 		principalRepo.delete(principal);
 	}
+	
 	public Principal save(Principal principal) {
-	return principalRepo.save(principal);
+		return principalRepo.save(principal);
 	}
 }
